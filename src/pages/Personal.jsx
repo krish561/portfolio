@@ -44,21 +44,21 @@ const components = [
     small: "Computer, IT",
     big: "Interest, Work",
     img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    content: "Hi — I’m Krish Singh, an MSc in Computer Science (Osmania University, 2024) and a passionate beginner in backend development. I’ve focused on Java-based systems, building production-style Spring Boot microservices and REST APIs (E-Commerce Microservices, Delivery Tracking, Inventory Management) and containerizing them with Docker for consistent deployment. I work comfortably with PostgreSQL/MySQL, Hibernate/JPA, and Linux development environments (Fedora / IntelliJ). I’m still a fresher actively looking for my first role or internship — I love designing clean architectures, optimizing database queries, and learning performance tuning. I’m currently sharpening my Spring Framework skills and practising DSA on LeetCode to level up for backend positions. (See my projects and links on my resume/GitHub.)"
   },
   {
     id: 2,
     small: "Books",
     big: "Fiction Novels, Manga",
     img: "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=1000&auto=format&fit=crop",
-    content: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    content: "An avid reader of fiction, I lean toward imaginative and character-driven stories — everything from contemporary novels to speculative sci-fi. I’m also into manga and manhwa; their visual storytelling and worldbuilding feed my creativity and help me think about UX and narrative flow in apps. Outside books I’m a big fan of sci-fi movies and films that explore technology and human relationships — they inspire the kinds of projects I want to build. Reading is both a hobby and a way I learn new concepts I later try to model in small projects."
   },
   {
     id: 3,
     small: "Diet",
     big: "Hyderabadi Foodie",
-    img: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=1000&auto=format&fit=crop", // Biryani/Food
-    content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    img: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=1000&auto=format&fit=crop",
+    content: "Born in Mumbai but raised in Hyderabad since age 10, I’m unapologetically in love with Hyderabadi cuisine — biryani is a comfort food for me. I enjoy discovering local eateries and home-cooked dishes that celebrate slow-cooked flavours and bold spices. Food for me is community and culture: it’s how I relax after long coding sessions and how I connect with friends. Expect occasional food photos and quick write-ups on my favourite local spots on this portfolio."
   }
 ];
 
