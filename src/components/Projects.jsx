@@ -1,37 +1,38 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Code2, Database, Layout, Box, Cpu } from 'lucide-react';
+import { ExternalLink, Code2, Database, Layout, Box, Cpu, Terminal } from 'lucide-react';
 
 const projectData = [
   {
-    title: "E-Commerce Microservices",
-    desc: "Independent Product, Order, and User services enabling independent deployment. 40% faster APIs.",
-    techIcons: [Code2, Database, Box], 
-    link: "https://github.com/krish561/E-comm",
-    img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1000&auto=format&fit=crop",
-    color: "from-blue-500 to-indigo-600"
+    title: "ContextQA",
+    desc: "Local-first GraphRAG document Q&A system. Ingests PDFs via Apache Tika, embeds into pgvector, and retrieves context-aware answers through a Spring Boot backend with on-device LLMs via Ollama.",
+    techIcons: [Code2, Database, Cpu],
+    link: "https://github.com/krish561/contextqa",
+    img: "https://images.unsplash.com/photo-1555952517-2e8e729e0b44?q=80&w=1000&auto=format&fit=crop",
+    color: "from-blue-500 to-indigo-600",
+    badge: "In Progress"
   },
   {
-    title: "Delivery Tracking System",
-    desc: "Real-time logistics engine with transactional integrity, Redis caching and driver route tracking.",
-    techIcons: [Code2, Database, Layout],
-    link: "https://github.com/krish561/DT",
-    img: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=1000&auto=format&fit=crop",
+    title: "J-Container",
+    desc: "Rootless container runtime in C & Java. 5x faster startup than Docker (149ms vs 778ms), 3–6x less memory. Implements user namespaces, PID isolation, and chroot-based filesystem jails without root.",
+    techIcons: [Terminal, Code2, Box],
+    link: "https://github.com/krish561/J-Container",
+    img: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1000&auto=format&fit=crop",
     color: "from-emerald-500 to-teal-600"
   },
   {
-    title: "Code Companion IDE",
-    desc: "Web IDE with AST optimization. 50% faster syntax checking via multi-threading implementation.",
-    techIcons: [Layout, Code2, Database],
-    link: "https://github.com/krish561/CodeCompanion",
-    img: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1000&auto=format&fit=crop",
+    title: "Lumin",
+    desc: "Terminal UI brightness controller in Rust using ratatui. Multi-backend: brightnessctl for laptop panels, DDC/CI for external monitors, GTK4 layer-shell software overlay for Wayland compositors.",
+    techIcons: [Terminal, Layout, Cpu],
+    link: "https://github.com/krish561/Lumin",
+    img: "https://github.com/krish561/Lumin/raw/main/preview.png",
     color: "from-purple-500 to-violet-600"
   },
   {
-    title: "Personal Learning Platform",
-    desc: "AI Factory Pattern reducing load by 25%. Parallel processing accelerated suggestions by 50ms.",
-    techIcons: [Layout, Cpu, Box],
-    link: "https://github.com/krish561/PersonalScheduler",
-    img: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1000&auto=format&fit=crop",
+    title: "Commerce Microservices API",
+    desc: "Product, Order, and User microservices with independent deployment and horizontal scalability. ~40% reduction in API response times through query optimization and Docker Compose containerization.",
+    techIcons: [Code2, Database, Box],
+    link: "https://github.com/krish561/E-comm",
+    img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1000&auto=format&fit=crop",
     color: "from-pink-500 to-rose-600"
   }
 ];
@@ -57,6 +58,13 @@ const Projects = () => {
             <img src={project.img} alt={project.title} className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 scale-105 group-hover:scale-110 transition-all duration-700" />
             <div className={`absolute inset-0 bg-gradient-to-br ${project.color} mix-blend-multiply opacity-60 group-hover:opacity-80 transition-opacity`} />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent z-10" />
+
+            {/* In Progress Badge */}
+            {project.badge && (
+              <div className="absolute top-8 right-8 z-20 px-4 py-1.5 bg-emerald-400/20 border border-emerald-400/50 rounded-full text-emerald-300 text-xs font-mono font-bold tracking-widest">
+                {project.badge}
+              </div>
+            )}
 
             {/* Content */}
             <div className="relative z-20">

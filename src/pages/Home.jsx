@@ -25,7 +25,7 @@ const Home = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <span className="font-bold text-emerald-400 tracking-widest text-sm uppercase mb-6 block">Software Engineer</span>
+          <span className="font-bold text-emerald-400 tracking-widest text-sm uppercase mb-6 block">Backend Engineer</span>
           
           <h1 className="text-6xl md:text-9xl font-cute font-black leading-[0.9] mb-6 cursor-default text-shadow-neon">
             Hello I'm <br/>
@@ -42,7 +42,7 @@ const Home = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-400 font-medium mt-8 mb-12 max-w-2xl mx-auto md:mx-0 leading-relaxed">
-            IT Specialist & Full-Stack Developer | Pragmatic, delivery-oriented professional | From Hyderabad
+            Backend Engineer | Systems programmer & Linux enthusiast | From Hyderabad
           </p>
 
           {/* Socials & CV */}
@@ -78,7 +78,7 @@ const Home = () => {
           </div>
         </motion.div>
 
-        {/* RIGHT SIDE: Profile Pic (On top for mobile via flex-col-reverse) */}
+        {/* RIGHT SIDE: Profile Pic */}
         <motion.div 
           className="relative w-72 h-72 md:w-[500px] md:h-[500px] flex-shrink-0 cursor-pointer"
           initial="idle"
@@ -130,8 +130,8 @@ const Home = () => {
       {/* --- STATS --- */}
       <section className="max-w-4xl mx-auto px-6 mb-32 flex justify-center gap-16 md:gap-32 relative z-10">
         {[
-          { label: "Age", value: "23" },
-          { label: "Projects worked on", value: "10+" }
+          { label: "Current Age ", value: "24" },
+          { label: "Years on Linux", value: "3+" }
         ].map((stat, idx) => (
           <motion.div 
             key={idx} 
@@ -150,11 +150,10 @@ const Home = () => {
       {/* --- EDUCATION --- */}
       <section className="max-w-7xl mx-auto px-6 mb-40 relative z-10">
         <h2 className="text-7xl md:text-8xl font-cute font-black text-center mb-20 text-shadow-neon">Education</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {[
-            { deg: "Master of Science in CS", time: "Nov 2022 - Dec 2024", gpa: "GPA: 7.03", school: "Osmania University", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1000&auto=format&fit=crop" },
-            { deg: "Bachelor of Science", time: "Aug 2019 - Sep 2022", gpa: "GPA: 8.41", school: "G. Pulla Reddy Degree College", img: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?q=80&w=1000&auto=format&fit=crop" },
-            { deg: "Intermediate", time: "June 2017 - July 2019", gpa: "GPA: 8.32", school: "Srigayatri Jr college", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000&auto=format&fit=crop" },
+            { deg: "Master of Science in CS", time: "Nov 2022 – Dec 2024", school: "Osmania University", img: "/Pasted image.png" },
+            { deg: "Bachelor of Science", time: "Aug 2019 – Sep 2022",  school: "G. Pulla Reddy Degree College", img: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?q=80&w=1000&auto=format&fit=crop" },
           ].map((edu, idx) => (
             <motion.div
               key={idx}
@@ -168,7 +167,7 @@ const Home = () => {
               <div className="relative z-20 text-center">
                 <h3 className="text-3xl md:text-4xl font-cute font-bold text-white mb-4 leading-tight">{edu.deg}</h3>
                 <div className="inline-block bg-emerald-500/20 text-emerald-300 font-mono text-sm px-3 py-1 rounded-full mb-4 border border-emerald-500/30">{edu.time}</div>
-                <div className="text-3xl font-black text-white mb-2">{edu.gpa}</div>
+                {edu.gpa && <div className="text-3xl font-black text-white mb-2">{edu.gpa}</div>}
                 <div className="text-gray-300 font-bold text-lg">{edu.school}</div>
               </div>
             </motion.div>
@@ -189,7 +188,7 @@ const Home = () => {
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10" />
             <h3 className="relative z-20 text-4xl font-black leading-tight text-white">
-              Developer building clean, reliable <span className="text-emerald-400">e-commerce</span>, <span className="text-blue-400">auction</span>, and <span className="text-purple-400">trading systems</span>.
+              Engineer building <span className="text-emerald-400">container runtimes</span>, <span className="text-blue-400">RAG pipelines</span>, and <span className="text-purple-400">systems tooling</span> — close to the metal.
             </h3>
           </div>
 
@@ -209,7 +208,7 @@ const Home = () => {
              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 z-0" />
              <span className="text-gray-400 text-sm font-mono block mb-6 relative z-10 uppercase tracking-wider">Tech Arsenal</span>
              <div className="flex flex-wrap gap-3 relative z-10">
-               {['Java', 'Spring Boot', 'Node.js', 'React', 'SQL', 'Docker', 'AWS', 'Redis', 'Git'].map(tech => (
+               {['Java', 'C', 'noob at Rust', 'Spring Boot', 'PostgreSQL', 'pgvector', 'Docker', 'Linux', 'Git'].map(tech => (
                  <span key={tech} className="px-4 py-2 bg-white/5 rounded-xl text-sm font-bold border border-white/10 hover:border-emerald-400/50 hover:text-emerald-300 transition-colors cursor-default">
                    {tech}
                  </span>
